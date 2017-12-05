@@ -2,12 +2,18 @@ import React, { Component } from "react";
 import Home from "./couch";
 //import Stuff from "./Stuff";
 //import Contact from "./Contact";
+import Sidebar from "./sidebar";
 
 
 class Main extends Component {
   render() {
     return (
-        <p>HI</p>
+    	<div>
+    		<p>HI</p>
+    		<Sidebar />
+    	</div>
+        
+
     );
   }
 }
