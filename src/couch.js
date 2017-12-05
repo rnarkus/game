@@ -10,7 +10,7 @@ export default class Couch extends Component {
 	render(){
 		return(
 			<div>
-				<img src={require("./images/couch.png")} alt="pillow" onDragEnd={this.props.action}/>
+				<img class="couch" src={require("./images/couch.png")} alt="couch" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}

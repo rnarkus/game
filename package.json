@@ -14,5 +14,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://creative.colorado.edu/~dihu0041/fwd/projects/fwd/game"
+  "homepage": "http://creative.colorado.edu/~dihu0041/fwd/projects/fwd/game",
+  "devDependencies": {
+    "react-image-resizer": "^1.2.0"
+  }
 }
