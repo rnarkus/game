@@ -7,6 +7,7 @@ import Solocup from "./solocup";
 import Dice from "./dice";
 import Pillow from "./pillow";
 
+
 export default class Sidebar extends Component {
 	constructor(props){
 		super();
@@ -25,6 +26,7 @@ export default class Sidebar extends Component {
 					<li><Dice/></li>
 					<li><Solocup/></li>
 					<li><Pillow/></li>
+
 				</ul>
 			</div>
 			);

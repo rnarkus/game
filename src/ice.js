@@ -10,7 +10,7 @@ export default class Ice extends Component {
 	render(){
 		return(
 			<div>
-				<img src={require("./images/ice.png")} alt="ice" onDragEnd={this.props.action}/>
+				<img class="item-sidebar" src={require("./images/ice.png")} alt="ice" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}

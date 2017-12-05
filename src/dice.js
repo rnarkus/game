@@ -10,7 +10,7 @@ export default class Dice extends Component {
 	render(){
 		return(
 			<div>
-				<img src={require("./images/dice.png")} alt="dice" onDragEnd={this.props.action}/>
+				<img class="item-sidebar" src={require("./images/dice.png")} alt="dice" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}

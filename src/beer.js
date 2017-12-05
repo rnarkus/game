@@ -10,7 +10,7 @@ export default class Beer extends Component {
 	render(){
 		return(
 			<div>
-				<img src={require("./images/beer.png")} alt="beer" onDragEnd={this.props.action}/>
+				<img class="item-sidebar" src={require("./images/beer.png")} alt="beer" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}

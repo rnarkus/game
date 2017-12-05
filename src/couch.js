@@ -14,7 +14,7 @@ export default class Couch extends Component {
 			<div class="container">
                 <Center>
 				<img class="couch" src={require("./images/couch.png")} alt="couch" onDragEnd={this.props.action}/>
-        </Center>
+                </Center>
 			</div>
 
 			);

@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flexbox-react": "^4.4.0",
     "react": "^16.2.0",
     "react-center": "^1.1.1",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-native": "^0.50.4",
+    "react-scripts": "1.0.17",
+    "reflexbox": "^3.0.0-0"
   },
   "scripts": {
     "start": "react-scripts start",

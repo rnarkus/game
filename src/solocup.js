@@ -10,7 +10,7 @@ export default class Solocup extends Component {
 	render(){
 		return(
 			<div>
-				<img src={require("./images/solocup.png")} alt="solocup" onDragEnd={this.props.action}/>
+				<img class="item-sidebar" src={require("./images/solocup.png")} alt="solocup" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}

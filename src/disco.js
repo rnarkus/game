@@ -10,7 +10,7 @@ export default class Disco extends Component {
 	render(){
 		return(
 			<div>
-				<img src={require("./images/disco.png")} alt="disco ball" onDragEnd={this.props.action}/>
+				<img class="item-sidebar" src={require("./images/disco.png")} alt="disco ball" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}
