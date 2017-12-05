@@ -2,10 +2,13 @@ body {
   background-color: #6581A6;
 }
 
+<<<<<<< HEAD
 body {
   background-color: #6581A6;
 }
 
+=======
+>>>>>>> 0e453ce5bbd5e5819accbe5ce6ddfd8ed8f328d2
 ul{
   list-style-type: none;
   display: inline-block;
@@ -14,8 +17,11 @@ ul{
 li img{
 	max-height: 50px;
 }
+<<<<<<< HEAD
 
 .couch{
     width: 80%;
     height: 80%;
 }
+=======
+>>>>>>> 0e453ce5bbd5e5819accbe5ce6ddfd8ed8f328d2
