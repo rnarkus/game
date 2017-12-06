@@ -7,7 +7,6 @@ export default class Couch extends Component {
 
 	};
 
-
 	render(){
 		return(
 

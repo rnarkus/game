@@ -4,6 +4,8 @@ body {
 ul{
   list-style-type: none;
   display: inline-block;
+  padding: 0;
+  list-style-type: none;
 }
 
 li img{
@@ -17,5 +19,18 @@ li img{
 
 }
 
+.sidebar-main{
+    background-color: blue;
+    align-items: center;
+    text-align:center;
+    padding: 20px;
+    margin-right: 10px;
+}
+
 .item-sidebar{
+    margin: 10px;
+    align-items: center;
+    text-align:center;
+
+
 }

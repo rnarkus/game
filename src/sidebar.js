@@ -18,14 +18,16 @@ export default class Sidebar extends Component {
 	render(){
 		return(
 			<div>
-				<ul>
+				<ul class="sidebar-main">
 					<li><Beer/></li>
 					<li><Ice/></li>
 					<li><Disco/></li>
 					<li><Music/></li>
 					<li><Dice/></li>
-					<li><Solocup/></li>
-					<li><Pillow/></li>
+					{/* A JSX comment
+						<li><Solocup/></li>
+						<li><Pillow/></li>
+					*/}
 
 				</ul>
 			</div>
