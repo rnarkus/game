@@ -2,12 +2,17 @@
 
 body {
     background-color: #6581A6;
+    font-family: 'Bungee Shade', cursive;
+	
+	
 }
 ul{
     list-style-type: none;
     display: inline-block;
     padding: 0;
     list-style-type: none;
+    font-family: 'Bungee', cursive;
+    color: white;
 }
 
 .ul-mobile{
@@ -69,5 +74,6 @@ li img{
 
 .title{
     margin-bottom: 10%;
-    font-size: 4vw;
+    font-size: 4.5vw;
+    text-align: center;
 }
