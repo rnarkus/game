@@ -11,6 +11,7 @@ export default class Disco extends Component {
 		return(
 			<div>
 				<img class="item-sidebar" src={require("./images/disco.png")} alt="disco ball" onDragEnd={this.props.action}/>
+			<p class="item-word">Disco</p>
 			</div>
 			);
 	}

@@ -11,6 +11,7 @@ export default class Ice extends Component {
 		return(
 			<div>
 				<img class="item-sidebar" src={require("./images/ice.png")} alt="ice" onDragEnd={this.props.action}/>
+			<p class="item-word">Ice</p>
 			</div>
 			);
 	}

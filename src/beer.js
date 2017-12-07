@@ -11,6 +11,7 @@ export default class Beer extends Component {
 		return(
 			<div>
 				<img class="item-sidebar" src={require("./images/beer.png")} alt="beer" onDragEnd={this.props.action}/>
+			<p class="item-word">Beer</p>
 			</div>
 			);
 	}

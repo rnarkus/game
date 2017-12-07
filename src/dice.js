@@ -11,6 +11,7 @@ export default class Dice extends Component {
 		return(
 			<div>
 				<img class="item-sidebar" src={require("./images/dice.png")} alt="dice" onDragEnd={this.props.action}/>
+			<p class="item-word">Dice</p>
 			</div>
 			);
 	}
