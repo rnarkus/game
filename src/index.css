@@ -36,10 +36,24 @@ li img{
 }
 
 .couch{
-
+    max-width: 1080px;
     width: 80%;
     height: 80%;
 
+}
+
+.pillow{
+    z-index: 2;
+    width: 15%;
+    position: relative;
+}
+
+.person{
+    z-index: 3;
+    width: 33%;
+    position: relative;
+    top: -475px;
+    left: 25%;
 }
 
 .sidebar-main{

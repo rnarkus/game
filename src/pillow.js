@@ -10,7 +10,7 @@ export default class Pillow extends Component {
 	render(){
 		return(
 			<div>
-				<img class="item-sidebar" src={require("./images/pillow.png")} alt="pillow" onDragEnd={this.props.action}/>
+				<img class="pillow" src={require("./images/pillow.png")} alt="pillow" onDragEnd={this.props.action}/>
 			</div>
 			);
 	}

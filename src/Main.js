@@ -3,6 +3,8 @@ import Couch from "./couch";
 //import Stuff from "./Stuff";
 //import Contact from "./Contact";
 import Sidebar from "./sidebar";
+import Pillow from "./pillow";
+import Person from "./person";
 import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
 
@@ -18,12 +20,16 @@ class Main extends Component {
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
+          <Pillow />
+          <Person />
       </Mobile>
         <Default>
           <Flex justify='space-between' align='center' style={{ 'margin': '10%' }}>
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
+          <Pillow />
+          <Person />
       </Default>
   </div>
 
