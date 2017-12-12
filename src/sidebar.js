@@ -9,10 +9,14 @@ import Person from "./person";
 import Pillow from "./pillow";
 import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
-import person from './images/person2.png'
+import person from './images/person2.png';
+import discoIMG from './images/disco-ball.png';
 
 var image=new Image();
 image.src=person;
+
+var imageDisco = new Image();
+imageDisco.src = discoIMG;
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
@@ -92,8 +96,7 @@ export default class Sidebar extends Component {
 		console.log("Disco Clicked");
 		clickedItem("disco");
 		var hanger =document.getElementById('disco-opp');
-		hanger.innerHTML = ('<div class"overall"><div class="hanger"></div><div class="discoball"><img src="https://drive.google.com/uc?id=0B7QrEBMF4GTGQ3lfRzV0cU5rNHM" alt=""></img></div></div>')
-
+		hanger.innerHTML = ('<div class"overall"><div class="hanger"></div><div class="discoball"><img src='+ imageDisco.src+ ' alt=""></img></div></div>')
 		var delayMillis = 5000;
 
 		setTimeout(function() {
@@ -117,7 +120,7 @@ export default class Sidebar extends Component {
 
 		return(
 			<div>
-			
+
 			<div>
 				<Mobile>
 				<div class="sidebar-main-mobile">
