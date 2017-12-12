@@ -5,6 +5,7 @@ import Disco from "./disco";
 import Music from "./music";
 import Solocup from "./solocup";
 import Dice from "./dice";
+import Person from "./person";
 import Pillow from "./pillow";
 import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
@@ -16,19 +17,36 @@ function partyTime(){
 
 }
 
-function beerFun(){
-
+function beerFun(props){
+	let top;
+	top = Math.floor(Math.random()*80+10);
+	console.log(top);
+	return top;
 }
 
 export default class Sidebar extends Component {
 	constructor(props){
-		super();
+		super(props);
 
+		this.state = this.clickedBeer.bind(this);
+		this.clicked = this.clicked.bind(this);
 	};
+
+	clickedBeer(){
+	  	let top;
+		top = Math.floor(Math.random()*80+10);
+		return top;
+  }
+
+	componentWillMount(){
+    	window.addEventListener('clicked', this.clicked);
+  }
+  componentWillUnmount(){
+    	window.removeEventListener('clicked', this.clicked);
+  }
 
 	clicked(){
 		console.log("Beer clicked");
-		beerFun();
 	}
 
 	clickedIce(){
@@ -52,6 +70,8 @@ export default class Sidebar extends Component {
 
 		return(
 			<div>
+			<div class="persondiv"><Person beerInfo={beerFun()} /></div>
+			<div>
 				<Mobile>
 				<div class="sidebar-main-mobile">
 					<ul class="ul-mobile">
@@ -62,6 +82,7 @@ export default class Sidebar extends Component {
 						<li class="li-mobile"><div onClick={this.clickedDice.bind(this)}><Dice/></div></li>
 					</ul>
 				</div>
+
 			</Mobile>
 			<Default>
 			<div class="sidebar-main">
@@ -75,6 +96,8 @@ export default class Sidebar extends Component {
 			</div>
 		</Default>
 		</div>
+		</div>
+
 			);
 	}
 

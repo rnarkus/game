@@ -21,7 +21,7 @@ class Main extends Component {
               <Box auto><Sidebar /></Box>
           </Flex>
           <Pillow />
-          <Person />
+    
       </Mobile>
         <Default>
           <Flex justify='space-between' align='center' style={{ 'margin': '10%' }}>
@@ -29,7 +29,7 @@ class Main extends Component {
               <Box auto><Sidebar /></Box>
           </Flex>
           <Pillow />
-          <Person />
+      
       </Default>
   </div>
 
