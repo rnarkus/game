@@ -112,7 +112,7 @@ export default class Sidebar extends Component {
 
 		return(
 			<div>
-			<div class="persondiv"><Person beerInfo={beerFun()} /></div>
+			
 			<div>
 				<Mobile>
 				<div class="sidebar-main-mobile">
