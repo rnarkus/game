@@ -95,9 +95,10 @@ li img{
 .title{
     margin-bottom: 10%;
     font-size: 4.5vw;
-    tex
+    text-align: center;
+}
 
-    .overall {
+.overall {
   margin: 40px auto;
   width: 200px;
   text-align: center;
