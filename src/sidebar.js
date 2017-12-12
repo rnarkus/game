@@ -9,11 +9,15 @@ import Person from "./person";
 import Pillow from "./pillow";
 import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
-import person from './images/person2.png';
+import person from './images/beer.gif';
+import person2 from './images/dice.gif';
 import discoIMG from './images/disco-ball.png';
 
 var image=new Image();
 image.src=person;
+
+var image2=new Image();
+image2.src=person2;
 
 var imageDisco = new Image();
 imageDisco.src = discoIMG;
@@ -36,7 +40,7 @@ function beerFun(props){
 function clickedItem(item){
 	if(item=="beer"){
 		top=top-5;
-		document.getElementById("couchhere").innerHTML="<img src="+image.src+"/>";
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image.src+"/>";
 		console.log(top);
 	} else if(item=="ice"){
 		top=top-7;
@@ -49,6 +53,7 @@ function clickedItem(item){
 		console.log(top);
 	} else if(item=="dice"){
 		top=top-7;
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image2.src+"/>";
 		console.log(top);
 	}
 	checkWakeUp();

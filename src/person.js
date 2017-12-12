@@ -22,7 +22,7 @@ export default class Person extends Component {
 		return(
 			
 			<div>
-				<img class="person" style={style} src={require("./images/person.png")} alt="person"/>
+				<img class="person" style={style} src={require("./images/person.gif")} alt="person"/>
 			</div>
 			);
 	}
