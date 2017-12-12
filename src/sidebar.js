@@ -13,16 +13,44 @@ import Responsive from 'react-responsive';
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
 
+let top;
+top = Math.floor(Math.random()*80+10);
+
 function partyTime(){
 
 }
 
 function beerFun(props){
-	let top;
-	top = Math.floor(Math.random()*80+10);
 	console.log(top);
 	return top;
 }
+
+function clickedItem(item){
+	if(item=="beer"){
+		top=top-5;
+		console.log(top);
+	} else if(item=="ice"){
+		top=top-7;
+		console.log(top);
+	} else if(item=="disco"){
+		top=top-12;
+		console.log(top);
+	} else if (item=="music"){
+		top=top-10;
+		console.log(top);
+	} else if(item=="dice"){
+		top=top-7;
+		console.log(top);
+	}
+	checkWakeUp();
+}
+
+function checkWakeUp(){
+	if(top<20){
+		console.log("He woke up!");
+	}
+}
+
 
 export default class Sidebar extends Component {
 	constructor(props){
@@ -33,8 +61,8 @@ export default class Sidebar extends Component {
 	};
 
 	clickedBeer(){
-	  	let top;
-		top = Math.floor(Math.random()*80+10);
+	  	// let top;
+		// top = Math.floor(Math.random()*80+10);
 		return top;
   }
 
@@ -47,22 +75,27 @@ export default class Sidebar extends Component {
 
 	clicked(){
 		console.log("Beer clicked");
+		clickedItem("beer");
 	}
 
 	clickedIce(){
-		console.log("Ice Clicked")
+		console.log("Ice Clicked");
+		clickedItem("ice");
 	}
 
 	clickedDis(){
 		console.log("Disco Clicked");
+		clickedItem("disco");
 	}
 
 	clickedMusic(){
 		console.log("Music Clicked");
+		clickedItem("music");
 	}
 
 	clickedDice(){
-		console.log("Dice Clicked")
+		console.log("Dice Clicked");
+		clickedItem("dice");
 	}
 
 
