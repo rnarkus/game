@@ -9,6 +9,10 @@ import Person from "./person";
 import Pillow from "./pillow";
 import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
+import person from './images/person2.png'
+
+var image=new Image();
+image.src=person;
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
@@ -28,6 +32,7 @@ function beerFun(props){
 function clickedItem(item){
 	if(item=="beer"){
 		top=top-5;
+		document.getElementById("couchhere").innerHTML="<img src="+image.src+"/>";
 		console.log(top);
 	} else if(item=="ice"){
 		top=top-7;
