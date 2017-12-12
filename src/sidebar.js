@@ -86,6 +86,8 @@ export default class Sidebar extends Component {
 	clickedDis(){
 		console.log("Disco Clicked");
 		clickedItem("disco");
+		var hanger =document.getElementById('disco-opp');
+		hanger.innerHTML = ('<div class"overall"><div class="hanger"></div><div class="discoball"><img src="https://drive.google.com/uc?id=0B7QrEBMF4GTGQ3lfRzV0cU5rNHM" alt=""></img></div></div>')
 	}
 
 	clickedMusic(){

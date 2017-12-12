@@ -16,20 +16,22 @@ class Main extends Component {
     return (
         <div>
         <Mobile>
+            <div id="disco-opp"></div>
           <Flex column justify='space-between' align='center' style={{ 'margin': '10%' }}>
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
           <Pillow />
-    
+
       </Mobile>
         <Default>
+            <div id="disco-opp"></div>
           <Flex justify='space-between' align='center' style={{ 'margin': '10%' }}>
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
           <Pillow />
-      
+
       </Default>
   </div>
 
