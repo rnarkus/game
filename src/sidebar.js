@@ -12,13 +12,40 @@ import Responsive from 'react-responsive';
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
 
+function partyTime(){
 
+}
+
+function beerFun(){
+
+}
 
 export default class Sidebar extends Component {
 	constructor(props){
 		super();
 
 	};
+
+	clicked(){
+		console.log("Beer clicked");
+		beerFun();
+	}
+
+	clickedIce(){
+		console.log("Ice Clicked")
+	}
+
+	clickedDis(){
+		console.log("Disco Clicked");
+	}
+
+	clickedMusic(){
+		console.log("Music Clicked");
+	}
+
+	clickedDice(){
+		console.log("Dice Clicked")
+	}
 
 
 	render(){
@@ -28,22 +55,22 @@ export default class Sidebar extends Component {
 				<Mobile>
 				<div class="sidebar-main-mobile">
 					<ul class="ul-mobile">
-						<li class="li-mobile"><Beer/></li>
-						<li class="li-mobile"><Ice/></li>
-						<li class="li-mobile"><Disco/></li>
-						<li class="li-mobile"><Music/></li>
-						<li class="li-mobile"><Dice/></li>
+						<li class="li-mobile"><div onClick={this.clicked.bind(this)}><Beer/></div></li>
+						<li class="li-mobile"><div onClick={this.clickedIce.bind(this)}><Ice/></div></li>
+						<li class="li-mobile"><div onClick={this.clickedDis.bind(this)}><Disco/></div></li>
+						<li class="li-mobile"><div onClick={this.clickedMusic.bind(this)}><Music/></div></li>
+						<li class="li-mobile"><div onClick={this.clickedDice.bind(this)}><Dice/></div></li>
 					</ul>
 				</div>
 			</Mobile>
 			<Default>
 			<div class="sidebar-main">
 				<ul>
-					<li><Beer/></li>
-					<li><Ice/></li>
-					<li><Disco/></li>
-					<li><Music/></li>
-					<li><Dice/></li>
+					<li><div onClick={this.clicked.bind(this)}><Beer/></div></li>
+					<li><div onClick={this.clickedIce.bind(this)}><Ice/></div></li>
+					<li><div onClick={this.clickedDis.bind(this)}><Disco/></div></li>
+					<li><div onClick={this.clickedMusic.bind(this)}><Music/></div></li>
+					<li><div onClick={this.clickedDice.bind(this)}><Dice/></div></li>
 				</ul>
 			</div>
 		</Default>
