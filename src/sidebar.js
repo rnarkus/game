@@ -11,6 +11,7 @@ import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
 import person from './images/beer.gif';
 import person2 from './images/dice.gif';
+import person3 from './images/ice.gif';
 import discoIMG from './images/disco-ball.png';
 
 var image=new Image();
@@ -18,6 +19,9 @@ image.src=person;
 
 var image2=new Image();
 image2.src=person2;
+
+var image3=new Image();
+image3.src=person3;
 
 var imageDisco = new Image();
 imageDisco.src = discoIMG;
@@ -43,6 +47,7 @@ function clickedItem(item){
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image.src+"/>";
 		console.log(top);
 	} else if(item=="ice"){
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image3.src+"/>";
 		top=top-7;
 		console.log(top);
 	} else if(item=="disco"){

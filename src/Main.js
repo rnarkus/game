@@ -17,7 +17,7 @@ class Main extends Component {
         <div>
         <Mobile>
             <div id="disco-opp"></div>
-          <Flex column justify='space-between' align='center' style={{ 'margin': '10%' }}>
+          <Flex column justify='space-between' align='center' style={{ 'margin': '5%' }}>
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
@@ -26,7 +26,7 @@ class Main extends Component {
       </Mobile>
         <Default>
             <div id="disco-opp"></div>
-          <Flex justify='space-between' align='center' style={{ 'margin': '10%' }}>
+          <Flex justify='space-between' align='center' style={{ 'margin': '5%' }}>
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
