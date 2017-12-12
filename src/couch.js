@@ -15,7 +15,7 @@ export default class Couch extends Component {
                     <h1 className="title">Get Your Roommate Off the Couch!</h1>
                 </Center>
                 <Center>
-				    <img className="couch" src={require("./images/couch.png")} alt="couch" onDragEnd={this.props.action}/>
+				    <img className="couch" src={require("./images/person.png")} alt="couch" onDragEnd={this.props.action}/>
                 </Center>
 			</div>
 

@@ -39,8 +39,8 @@ li img{
     max-width: 1080px;
     width: 80%;
     height: 80%;
-
-}
+    opacity: 0;
+  }
 
 .pillow{
     z-index: 2;
@@ -49,11 +49,12 @@ li img{
 }
 
 .person{
-    z-index: 3;
-    width: 33%;
+    /*z-index: 3;*/
+    width: 50%;
     position: absolute;
+    left: 10%;
 
-    left: 25%;
+    
 }
 
 .persondiv{

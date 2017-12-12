@@ -21,7 +21,7 @@ class Main extends Component {
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
-          <Pillow />
+         
 
       </Mobile>
         <Default>
@@ -30,7 +30,7 @@ class Main extends Component {
               <Box auto><Couch /></Box>
               <Box auto><Sidebar /></Box>
           </Flex>
-          <Pillow />
+        
 
       </Default>
   </div>

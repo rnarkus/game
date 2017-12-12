@@ -20,6 +20,7 @@ export default class Person extends Component {
 			top: this.state.top+ "%"
 		}
 		return(
+			
 			<div>
 				<img class="person" style={style} src={require("./images/person.png")} alt="person"/>
 			</div>
