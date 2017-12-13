@@ -67,6 +67,7 @@ function clickedItem(item){
 function checkWakeUp(){
 	if(top<20){
 		console.log("He woke up!");
+		document.getElementById("header").innerHTML="<h1 class='title'>He Woke Up!</h1> <button type='submit' onClick='window.location.reload()'>Play Again</button>";
 	}
 }
 
@@ -85,13 +86,15 @@ export default class Sidebar extends Component {
 		return top;
   }
 
+  resetme(){
+  	console.log("resetme");
+  }
 	componentWillMount(){
     	window.addEventListener('clicked', this.clicked);
   }
   componentWillUnmount(){
     	window.removeEventListener('clicked', this.clicked);
   }
-
 	clicked(){
 		console.log("Beer clicked");
 		clickedItem("beer");

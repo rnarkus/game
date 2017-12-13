@@ -7,14 +7,19 @@ image.src=person;
 export default class Couch extends Component {
 	constructor(props){
 		super();
+		this.resetme=this.resetme.bind(this);
 
 	};
+
+	resetme(){
+  	console.log("resetme");
+  	}
 
 	render(){
 		return(
 
 			<div class="container">
-                <Center>
+                <Center id="header">
                     <h1 className="title">Get Your Roommate Off the Couch!</h1>
                 </Center>
                 <Center id="couchhere">
