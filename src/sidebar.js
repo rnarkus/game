@@ -9,12 +9,14 @@ import Person from "./person";
 import Pillow from "./pillow";
 import {Flex, Box} from 'reflexbox';
 import Responsive from 'react-responsive';
-import person from './images/beer.gif';
-import person2 from './images/dice.gif';
-import person3 from './images/ice.gif';
+import person from './images/dice2.gif';
+import person2 from './images/dicefast.gif';
+import person3 from './images/icefast.gif';
 import discoIMG from './images/disco-ball.png';
 import discoMUSIC from './music/disconoise.wav';
 import musicMUSIC from './music/partyinUS.mp3';
+import og from './images/person.gif';
+
 
 var audio = new Audio();
 audio.src=discoMUSIC;
@@ -23,13 +25,16 @@ var audio1 = new Audio();
 audio1.src=musicMUSIC;
 
 var image=new Image();
-image.src=person;
+image.src=person+"?x="+Math.random();
+
+var imageog=new Image();
+imageog.src=og+"?x="+Math.random();
 
 var image2=new Image();
-image2.src=person2;
+image2.src=person2+"?x="+Math.random();
 
 var image3=new Image();
-image3.src=person3;
+image3.src=person3+"?x="+Math.random();
 
 var imageDisco = new Image();
 imageDisco.src = discoIMG;
@@ -51,24 +56,40 @@ function beerFun(props){
 
 function clickedItem(item){
 	if(item=="beer"){
+		var image=new Image();
+		image.src=person+"?x="+Math.random();
+		// document.getElementById("couchhere").innerHTML="<img class='couch' src=''/>";
+		// document.getElementById("couchhere").innerHTML="<img class='couch' src='+imageog.src+'/>";
 		top=top-5;
+		var timeout = 10000; 
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image.src+"/>";
 		console.log(top);
 	} else if(item=="ice"){
+		var image3=new Image();
+		image3.src=person3+"?x="+Math.random();
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>";
+		var timeout = 10000; 
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image3.src+"/>";
+		// document.getElementById("couchhere").innerHTML="<img class='couch' src="+image3.src+"/>";
 		top=top-7;
 		console.log(top);
 	} else if(item=="disco"){
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
 		top=top-12;
 		console.log(top);
 	} else if (item=="music"){
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
 		top=top-10;
 		console.log(top);
 	} else if(item=="dice"){
+		var image2=new Image();
+		image2.src=person2+"?x="+Math.random();
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
 		top=top-7;
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image2.src+"/>";
 		console.log(top);
 	}
+
 	checkWakeUp();
 }
 

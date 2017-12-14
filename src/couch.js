@@ -21,6 +21,7 @@ export default class Couch extends Component {
                 <Center id="couchhere">
 				    <img id="imgCouch" className="couch" src={require("./images/person.gif")} alt="couch" onDragEnd={this.props.action}/>
                 </Center>
+           
 			</div>
 
 			);
