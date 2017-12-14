@@ -65,14 +65,14 @@ function clickedItem(item){
 		// document.getElementById("couchhere").innerHTML="<img class='couch' src=''/>";
 		// document.getElementById("couchhere").innerHTML="<img class='couch' src='+imageog.src+'/>";
 		top=top-5;
-		var timeout = 10000; 
+		var timeout = 10000;
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image.src+"/>";
 		console.log(top);
 	} else if(item=="ice"){
 		var image3=new Image();
 		image3.src=person3+"?x="+Math.random();
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>";
-		var timeout = 10000; 
+		var timeout = 10000;
 		document.getElementById("couchhere").innerHTML="<img class='couch' src="+image3.src+"/>";
 		// document.getElementById("couchhere").innerHTML="<img class='couch' src="+image3.src+"/>";
 		top=top-7;
@@ -113,7 +113,7 @@ function checkWakeUp(){
 		audio1.src='';
 		console.log("He woke up!");
 		document.getElementById("header").innerHTML="<h1 class='donetitle'>He Woke Up!</h1> <button type='submit' onClick='window.location.reload()'>Play Again</button>";
-		document.getElementById("couchhere").innerHTML="<img class='couch' src="+couchend.src+"/>";
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+couchend.src+"/></img>";
 	}
 }
 
