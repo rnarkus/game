@@ -132,7 +132,6 @@ export default class Sidebar extends Component {
 		audio1.play();
 		var delayMillis = 6000;
 		setTimeout(function() {
-			hanger.innerHTML = '',
 			audio1.pause()
 		}, delayMillis);
 	}
