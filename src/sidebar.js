@@ -13,6 +13,14 @@ import person from './images/beer.gif';
 import person2 from './images/dice.gif';
 import person3 from './images/ice.gif';
 import discoIMG from './images/disco-ball.png';
+import discoMUSIC from './music/disconoise.wav';
+import musicMUSIC from './music/partyinUS.mp3';
+
+var audio = new Audio();
+audio.src=discoMUSIC;
+
+var audio1 = new Audio();
+audio1.src=musicMUSIC;
 
 var image=new Image();
 image.src=person;
@@ -108,12 +116,14 @@ export default class Sidebar extends Component {
 	clickedDis(){
 		console.log("Disco Clicked");
 		clickedItem("disco");
+		audio.play();
 		var hanger =document.getElementById('disco-opp');
 		hanger.innerHTML = ('<div class"overall"><div class="hanger"></div><div class="discoball"><img src='+ imageDisco.src+ ' alt=""></img></div></div>')
 		var delayMillis = 5000;
 
 		setTimeout(function() {
-			hanger.innerHTML = ''
+			hanger.innerHTML = '',
+			audio.pause()
 		}, delayMillis);
 
 	}
@@ -121,6 +131,12 @@ export default class Sidebar extends Component {
 	clickedMusic(){
 		console.log("Music Clicked");
 		clickedItem("music");
+		audio1.play();
+		var delayMillis = 6000;
+		setTimeout(function() {
+			hanger.innerHTML = '',
+			audio1.pause()
+		}, delayMillis);
 	}
 
 	clickedDice(){
