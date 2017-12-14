@@ -78,11 +78,11 @@ function clickedItem(item){
 		top=top-7;
 		console.log(top);
 	} else if(item=="disco"){
-		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
+		// document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
 		top=top-12;
 		console.log(top);
 	} else if (item=="music"){
-		document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
+		// document.getElementById("couchhere").innerHTML="<img class='couch' src="+imageog.src+"/>"
 		top=top-10;
 		console.log(top);
 	} else if(item=="dice"){
