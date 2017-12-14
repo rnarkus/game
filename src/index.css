@@ -152,3 +152,28 @@ li img{
   top: 0;
   left: 50%;
 }
+
+#header{
+	text-align: center;
+	font-size: 6.5vw;
+	flex-flow: row wrap;
+}
+
+.donetitle{
+	margin-bottom: 5%;
+    font-size: 6.5vw;
+    text-align: center;
+    width: 100%;
+}
+
+button{
+	text-align: center;
+    width: 150px;
+    z-index: 100;
+    height: 60px;
+    font-family: 'Bungee';
+    color: white;
+    border: none;
+    background-color: #3A5447;
+    font-size: 1.5vw;
+}
