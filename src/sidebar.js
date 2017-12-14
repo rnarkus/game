@@ -143,6 +143,7 @@ export default class Sidebar extends Component {
 	}
 
 	clickedDis(){
+		if(top>20){
 		console.log("Disco Clicked");
 		clickedItem("disco");
 		audio.play();
@@ -155,6 +156,7 @@ export default class Sidebar extends Component {
 			hanger.innerHTML = '',
 			audio.pause()
 		}, delayMillis);
+	}
 
 	}
 
