@@ -99,7 +99,16 @@ function clickedItem(item){
 
 function checkWakeUp(){
 	if(top<20){
-		imageDisco.src = '';
+		var delayMillis = 0;
+		var hanger =document.getElementById('disco-opp');
+		hanger.innerHTML = ('<div class"overall"><div class="hanger"></div><div class="discoball"><img src='+ imageDisco.src+ ' alt=""></img></div></div>')
+		audio.play();
+		audio1.pause();
+		setTimeout(function() {
+			hanger.innerHTML = '',
+			audio.pause(),
+			imageDisco.src = '';
+		}, delayMillis);
 		audio.src='';
 		audio1.src='';
 		console.log("He woke up!");
@@ -134,18 +143,22 @@ export default class Sidebar extends Component {
 		console.log("Beer clicked");
 		clickedItem("beer");
 		audio1.pause();
+		audio1.currentTime = 0
 	}
 
 	clickedIce(){
 		console.log("Ice Clicked");
 		clickedItem("ice");
 		audio1.pause();
+		audio1.currentTime = 0
 	}
 
 	clickedDis(){
 		if(top>20){
 		console.log("Disco Clicked");
 		clickedItem("disco");
+		audio.currentTime = 0
+		audio1.currentTime = 0
 		audio.play();
 		audio1.pause();
 		var hanger =document.getElementById('disco-opp');
@@ -165,12 +178,14 @@ export default class Sidebar extends Component {
 		console.log("Music Clicked");
 		clickedItem("music");
 		audio1.play();
+		audio1.currentTime = 0
 	}
 
 	clickedDice(){
 		console.log("Dice Clicked");
 		clickedItem("dice");
 		audio1.pause();
+		audio1.currentTime = 0
 	}
 
 
