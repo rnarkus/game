@@ -92,6 +92,7 @@ export default class Sidebar extends Component {
 	  	// let top;
 		// top = Math.floor(Math.random()*80+10);
 		return top;
+		audio1.pause();
   }
 
 	componentWillMount(){
@@ -103,17 +104,20 @@ export default class Sidebar extends Component {
 	clicked(){
 		console.log("Beer clicked");
 		clickedItem("beer");
+		audio1.pause();
 	}
 
 	clickedIce(){
 		console.log("Ice Clicked");
 		clickedItem("ice");
+		audio1.pause();
 	}
 
 	clickedDis(){
 		console.log("Disco Clicked");
 		clickedItem("disco");
 		audio.play();
+		audio1.pause();
 		var hanger =document.getElementById('disco-opp');
 		hanger.innerHTML = ('<div class"overall"><div class="hanger"></div><div class="discoball"><img src='+ imageDisco.src+ ' alt=""></img></div></div>')
 		var delayMillis = 5000;
@@ -130,15 +134,12 @@ export default class Sidebar extends Component {
 		console.log("Music Clicked");
 		clickedItem("music");
 		audio1.play();
-		var delayMillis = 6000;
-		setTimeout(function() {
-			audio1.pause()
-		}, delayMillis);
 	}
 
 	clickedDice(){
 		console.log("Dice Clicked");
 		clickedItem("dice");
+		audio1.pause();
 	}
 
 
