@@ -16,6 +16,7 @@ import discoIMG from './images/disco-ball.png';
 import discoMUSIC from './music/disconoise.wav';
 import musicMUSIC from './music/partyinUS.mp3';
 import og from './images/person.gif';
+import couchnew from './images/couchnew.png';
 
 
 var audio = new Audio();
@@ -38,6 +39,9 @@ image3.src=person3+"?x="+Math.random();
 
 var imageDisco = new Image();
 imageDisco.src = discoIMG;
+
+var couchend = new Image();
+couchend.src = couchnew;
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
@@ -95,8 +99,12 @@ function clickedItem(item){
 
 function checkWakeUp(){
 	if(top<20){
+		imageDisco.src = '';
+		audio.src='';
+		audio1.src='';
 		console.log("He woke up!");
 		document.getElementById("header").innerHTML="<h1 class='donetitle'>He Woke Up!</h1> <button type='submit' onClick='window.location.reload()'>Play Again</button>";
+		document.getElementById("couchhere").innerHTML="<img class='couch' src="+couchend.src+"/>";
 	}
 }
 
