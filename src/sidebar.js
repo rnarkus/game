@@ -113,7 +113,7 @@ function checkWakeUp(){
 		audio1.src='';
 		console.log("He woke up!");
 		document.getElementById("header").innerHTML="<h1 class='donetitle'>He Woke Up!</h1> <button type='submit' onClick='window.location.reload()'>Play Again</button>";
-		document.getElementById("couchhere").innerHTML="<img class='couch' src="+couchend.src+"/></img>";
+		document.getElementById("couchhere").innerHTML='<img class="couch" src='+couchend.src+'><img/>';
 	}
 }
 
